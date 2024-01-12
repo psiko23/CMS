@@ -1,9 +1,9 @@
 USE mysql;
 
-DROP DATABASE IF EXISTS registrar;
-CREATE DATABASE registrar;
+DROP DATABASE IF EXISTS employee_management_db;
+CREATE DATABASE employee_management_db;
 
-USE registrar;
+USE employee_management_db;
 
 CREATE TABLE departments (
     id INT AUTO_INCREMENT NOT NULL,
