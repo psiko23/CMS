@@ -21,6 +21,10 @@ With this application, you can perform the following tasks:
 - View all employees
 - Update employee roles
 
+Below is an example of how to use the application:
+
+![demo](./lib/assets/Untitled_%20Jan%2017,%202024%201_23%20PM.gif)
+
 ## Tests
 no testing available
 ## License
