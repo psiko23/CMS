@@ -4,6 +4,7 @@ const viewAllEmployees = require('./lib/queries/view_all_employees');
 const addDepartment = require('./lib/queries/add_department');
 const addEmployee = require('./lib/queries/add_employee');
 const addRole = require('./lib/queries/add_role');
+const updateRole = require('./lib/queries/update_employee_role');
 
 
 const inquirerFunction = require('./lib/inquirer_functions');
@@ -44,21 +45,10 @@ const startApp = async () => {
     if(action === 'Add an employee') {
         await addEmployee();
     }
+    if(action === 'Update an employee role') {
+        await updateRole();
+    }
     startApp();
 }
 
 startApp();
-
-
-
-// const runApp = async () => {
-//     const answer = await startApp.ask();
-//     const action = answer.action;
-
-//     if (action === 'View all departments') {
-//         await viewAllDepartments();
-//     }
-//     runApp();
-// }
-
-// runApp();
