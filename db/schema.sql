@@ -41,7 +41,7 @@ CREATE TABLE employees (
     last_name VARCHAR(30) NOT NULL,
     role_id INT,
     manager_id INT,
-    active BOOLEAN NOT NULL,
+    active BOOLEAN DEFAULT true,
 
     PRIMARY KEY (id),
     FOREIGN KEY (role_id) REFERENCES roles(id),
