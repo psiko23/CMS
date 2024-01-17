@@ -6,7 +6,6 @@ const addEmployee = require('./lib/queries/add_employee');
 const addRole = require('./lib/queries/add_role');
 const updateRole = require('./lib/queries/update_employee_role');
 
-
 const inquirerFunction = require('./lib/inquirer_functions');
 
 const startApp = async () => {
@@ -48,7 +47,11 @@ const startApp = async () => {
     if(action === 'Update an employee role') {
         await updateRole();
     }
+    if(action === 'Exit') {
+        console.log('Goodbye... (ctrl + c)')
+        return;
+    }
     startApp();
-}
+};
 
 startApp();
